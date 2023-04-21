@@ -81,9 +81,9 @@ funciton complexity breakdown:
 sqrt(): O(log(num))
 is_prime(): O(sqrt(n)) loops from 2 to the square root of n
 is_tprime(): O(sqrt(n)), since it calls sqrt() and is_prime()
-Loop in main() that calls is_tprime() for each element in the array: O(n * sqrt(max(arr[i]))), where max(arr[i]) is the maximum value in the array
+Loop in main() that calls is_tprime() for each element in the array: O(n * (max(arr[i]))^0.5), where max(arr[i]) is the maximum value in the array
 
-T(n) = O(n * sqrt(max(arr[i])))
+T(n) = O(n * (max(arr[i]))^0.5)
 
     Space Complexity:
 
